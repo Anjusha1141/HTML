@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{ 
+            margin: 0; 
+            padding: 0;
+            background-color: rgb(249, 249, 249);
+        }
+        .page{
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: rgb(36, 39, 41);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+            
+        }
+        .logo{
+            text-align: center;
+            margin-bottom: 20px;
+            color:aliceblue;
+        }
+        .logo h1{
+            font-size: 48px;
+        }
+        .form{
+            margin-right: 15px;
+        }
+       .input{
+        margin-bottom: 18px;
+       }
+       .input label{
+            display: block;
+            margin-bottom: 5px;
+            color: aliceblue;
+       }
+       .input input{
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            background-color: rgb(36, 39, 41);
+       }
+       .login {
+            width: 100%;
+            padding: 10px 30px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 1px;
+            color: #fff;
+            cursor: pointer;
+    }
+    .create-account{
+            width: 100%;
+            padding: 10px 30px;
+            background-color: #373f48;
+            border: none;
+            border-radius: 1px;
+            color: #fff;
+            cursor: pointer;
+    }
+    .links{
+            padding: 10px;
+            text-align: center;
+    }
+    a {
+            text-decoration: none;
+            color: #1877f2;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="logo"> <h1>Facebook</h1></div>
+        <div class="form">
+            <form action="login.php" method="post">
+                <div class="input">
+                    <label>Email or username</label>
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="input">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                    <div class="center">
+                        <button type="submit" class="login">Log In</button>
+                    </div>
+                    
+                    <div class="links">
+                        <a href="#" class="forgot-password">Forgotten Password?</a>
+                        <br>
+    
+                    </div>
+                    <hr>
+                    <div >
+                        <button type="button" class="create-account" onclick="location.href='create_account.php';">Create an Account</button>
+                    </div>
+                    
+                
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
